@@ -24,9 +24,33 @@
             </button>
         </div>
 
-        <button class="p-4  rounded-4xl cursor-pointer  hover:bg-amber-100 bg-amber-100 mr-8"><strong>criar evento</strong></button>
-        <button class="p-2 rounded-4xl cursor-pointer  hover:bg-amber-100 bg-amber-100 mr-8"><strong>login</strong></button>
-        <button class="p-2 rounded-4xl cursor-pointer  hover:bg-amber-100 bg-amber-100 mr-8"><strong>cadastro</strong></button>
+       <button class="p-4  rounded-4xl cursor-pointer  hover:bg-amber-100 bg-amber-100 mr-8"><strong>criar evento</strong></button>
+    <div class="relative">
+
+        <button class="p-4 rounded-4xl cursor-pointer hover:bg-amber-100 bg-amber-100 mr-8 flex items-center justify-between">
+            <strong class="mr-2">Nome do usuario</strong>
+            <svg data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+            </svg>
+        </button>
+        <!-- Dropdown -->
+        <div class="absolute top-full  right-0 rounded-lg p-3 mt-1 shadow-md scale-y-0 group-focus:scale-y-100 origin-top duration-200
+            <ul class="py-1">
+                <li class="flex items-center px-4 py-2 text-sm  hover:bg-amber-200 cursor-pointer ">
+                    <i class="fa-solid fa-ticket mr-2"></i> Ingressos
+                </li>
+                <li class="flex items-center px-4 py-2 text-sm  hover:bg-amber-200 cursor-pointer">
+                    <i class="fa-solid fa-user mr-2"></i> Minha conta
+                </li>
+                <li class="flex items-center px-4 py-2 text-sm hover:bg-amber-200 cursor-pointer">
+                    <i class="fa-solid fa-calendar mr-2"></i> Meus eventos
+                </li>
+                <li class="flex items-center px-4 py-2 text-sm hover:bg-amber-200 cursor-pointer">
+                    <i class="fa-solid fa-right-from-bracket mr-2"></i> Sair
+                </li>
+            </ul>
+        </div>
+    </div>
     </header>
     <div class="relative flex items-center justify-center h-screen mb-10">
         <img class="rounded-4xl h-95 w-240 object-cover" src="img/preto.png" alt="">
@@ -127,7 +151,7 @@
 </div>
     </section>
    </aside>
-   <footer class="p-13 bg-blue-700">
+   <footer class="p-13 bg-blue-800">
         <div class="flex justify-center items-center h-16">
             <p class="text-white">© 2023 Todos os direitos reservados.</p>
         </div>
